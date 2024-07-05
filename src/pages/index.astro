@@ -1,14 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="questguide.dev">
   <main>
-    <div class="flex w-full">
-      <h1 class="text-4xl font-sans">questguide.dev</h1>
-    </div>
-    <div>
-      <h2 class="text-4xl font-sans font-light">An [Unofficial] Guide For</h2>
+    <Header title="questguide.dev" />
+    <div class="flex w-full px-8 py-2 h-24 items-center flex-col">
+      <div class="flex gap-2 pb-4">
+        <h2 class="text-4xl font-sans font-light">An [Unofficial] Guide For</h2>
+        <h2 class="text-4xl font-sans">Meta Quest</h2>
+        <h2 class="text-4xl font-sans font-light">Development</h2>
+      </div>
+      <img src="/images/meta-quest-3.jpg" alt="Meta Quest 3" class="w-[40rem] h-auto ml-auto mr-auto rounded-[8rem]" />
     </div>
   </main>
 </Layout>
